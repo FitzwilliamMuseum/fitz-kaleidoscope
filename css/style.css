@@ -122,6 +122,11 @@ div.canvas-holder canvas {
   transform: translate(calc(-50% - 100px), -50%);
 }
 
+.logo {
+  position: fixed;
+  width: 240px;
+} 
+
 
 /* Media Queries */
 @media only screen {
