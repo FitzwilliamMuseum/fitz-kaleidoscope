@@ -1,50 +1,71 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="generator" content="SuperHi">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Fitzwilliam Kaleidoscope</title>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/_base.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="icon" href="images/favicon.ico">
-	</head>
-	<body>
-		<div class="canvas-holder">
-		  <canvas width="700" height="700"></canvas>
-		</div>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="SuperHi">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fitzwilliam Kaleidoscope</title>
+	<meta name="description" content="A GLSL Kaleidoscope using Fitzwilliam Museum collection images" />
+	<!-- Open graph -->
+	<meta property="og:locale" content="en" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="The Fitzwilliam Museum: Kaleidoscope" />
+	<meta property="og:description" content="A GLSL Kaleidoscope using Fitzwilliam Museum collection images" />
+	<meta property="og:url" content="https://kaleidoscope.fitz.ms" />
+	<meta property="og:site_name" content="The Fitzwilliam Museum" />
 
-		<div class="info" id="infoBox">
-		  <header>
-		  <h1>
-		    Fitzwilliam Kaleidoscope
-		    </h1>
-		    <br>
-		    <p>
-		      Click to change the image, and move your mouse around to change the scale
-		    </p>
-		  </header>
+	<meta property="og:image" content="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/img_20190105_153947.jpg" />
+	<meta name="twitter:image" content="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/img_20190105_153947.jpg" />
 
-		  <nav>
-		    <h2>Images Used</h2>
-		  	<a href="https://collection.beta.fitz.ms/id/object/65489">Double Headed Herm, Early Roman</a>
-		  	<a href="https://collection.beta.fitz.ms/id/object/1191">A Village Festival, by Pieter Breughel the Younger</a>
-		    <a href="https://collection.beta.fitz.ms/id/object/656">Tarquin and Lucretia, by Titian</a>
-		    <a href="https://collection.beta.fitz.ms/id/object/2901">Le char d' Apollon, by Odilon Redon</a>
-		    <a href="https://collection.beta.fitz.ms/id/object/41602">Young Man in a Velvet Cap, by Rembrandt van Rijn</a>
-		  </nav>
-		  <button onclick="hideInfo()">[click here to hide this panel, then click here again to bring it back]</button>
-		</div>
+	<meta name="csrf-token" content="yaoiCKbKwpDlofqOMKgylFvKYxHOBL69W8hrkVb5">
+
+	<!-- Twitter card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="A GLSL Kaleidoscope using Fitzwilliam Museum collection images" />
+	<meta name="twitter:title" content="The Fitzwilliam Museum: Kaleidoscope" />
+	<meta name="twitter:site" content="@fitzmuseum_uk" />
+	<meta name="twitter:creator" content="@fitzmuseum_uk" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/_base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+	<div class="canvas-holder">
+		<canvas width="700" height="700"></canvas>
+	</div>
+
+	<div class="info" id="infoBox">
+		<header>
+			<h1>
+				Fitzwilliam Kaleidoscope
+			</h1>
+			<br>
+			<p>
+				Click to change the image, and move your mouse around to change the scale
+			</p>
+		</header>
+
+		<nav>
+			<h2>Images Used</h2>
+			<a href="https://collection.beta.fitz.ms/id/object/65489" title="Collections record for Double Headed Herm">Double Headed Herm, Early Roman</a>
+			<a href="https://collection.beta.fitz.ms/id/object/1191" title="Collections record for a Village Festival">A Village Festival, by Pieter Breughel the Younger</a>
+			<a href="https://collection.beta.fitz.ms/id/object/656" title="Collections record for Titian's Tarquin and Lucretia">Tarquin and Lucretia, by Titian</a>
+			<a href="https://collection.beta.fitz.ms/id/object/2901" title="Collections record for Le char d' Apollon">Le char d' Apollon, by Odilon Redon</a>
+			<a href="https://collection.beta.fitz.ms/id/object/41602" title="Collections record for Young Man in a Velvet Cap">Young Man in a Velvet Cap, by Rembrandt van Rijn</a>
+		</nav>
+		<button onclick="hideInfo()">[click here to hide this panel, then click here again to bring it back]</button>
+	</div>
 
 
-		  <button class="show"onclick="showInfo()">Show Information</button>
+	<button class="show"onclick="showInfo()">Show Information</button>
 
-		<script src="js/glslcanvas.min.js"></script>
-		<script src="js/frag.js"></script>
-		<script src="js/canvas.js"></script>
-		<script src="js/buttons.js"></script>
-	</body>
+	<script src="js/glslcanvas.min.js"></script>
+	<script src="js/frag.js"></script>
+	<script src="js/canvas.js"></script>
+	<script src="js/buttons.js"></script>
+</body>
 </html>
