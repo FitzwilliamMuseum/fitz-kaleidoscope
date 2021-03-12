@@ -65,7 +65,7 @@ input, textarea, select {
 /* page css */
 body {
   font-family: 'Alegreya', serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.25;
   font-weight: 400;
   background-color: #11111a;
@@ -73,7 +73,7 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -93,7 +93,7 @@ div.info {
   width: 320px;
   height: calc(100vh - 128px);
   background-color: #fffff1;
-  padding: 32px;
+  padding: 26px;
   z-index: 2;
   display: flex;
   flex-direction: column;
