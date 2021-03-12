@@ -8,5 +8,5 @@ function hideInfo () {
 
 function showInfo () {
   infoBox.style.display = "flex";
-  logo.style.display = "flex";
+  logo.style.display = "block";
 }                     
