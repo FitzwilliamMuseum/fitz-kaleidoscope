@@ -26,7 +26,7 @@ div.info {
   top: 48px;
   right: 48px;
   width: 320px;
-  height: calc(100vh - 96px);
+  height: calc(100vh - 128px);
   background-color: #fffff1;
   padding: 32px;
   z-index: 2;
