@@ -40,7 +40,7 @@ nav {
   flex-direction: column;
 }
 
-nav a {
+nav a, small a {
   color: #c24b55ff;
   font-weight: 500;
   text-decoration: none;
@@ -50,9 +50,15 @@ nav a {
   margin-bottom: 12px;
 }
 
-nav a:hover {
+nav a:hover, small a:hover {
   color: #823135;
   transition: all 0.6s;
+}
+
+small {
+   font-size: 14px;
+  color: #c24b55ff;
+  text-decoration: none;
 }
 
 
