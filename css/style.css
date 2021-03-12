@@ -126,6 +126,14 @@ small {
   text-decoration: none;
 }
 
+.small-logo {
+  position: absolute;
+  width: 80px;
+  right: 8px;
+  top: 8px;
+  display: none;
+}
+
 
 /* Show/Hide Info Box */
 button {
@@ -190,7 +198,7 @@ div.canvas-holder canvas {
 .logo {
   position: fixed;
   width: 240px;
-} 
+}
 
 
 /* Media Queries */
@@ -200,9 +208,19 @@ div.canvas-holder canvas {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .logo {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 420px) {
   body {
     font-size: 16px;
+  }
+
+  .small-logo {
+    display: block;
   }
 
   div.info {
@@ -232,5 +250,5 @@ div.canvas-holder canvas {
 
   button.show:hover {
     opacity: 0;
-  }    
+  }
 }
