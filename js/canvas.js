@@ -1,5 +1,5 @@
 const canvas = document.querySelector("div.canvas-holder canvas")
-const sandbox = new GlslCanvas(canvas)
+const sandbox = new GlslCanvas(canvas, { fragmentString: frag })
 
 const calcSize = function () {
   let ww = window.innerWidth
@@ -20,7 +20,6 @@ window.addEventListener("resize", function () {
   calcSize()
 })
 
-sandbox.load(frag)
 
 const images = ["images/herm-gr-20-1850.jpg", "images/breughel-1192.jpg", "images/titian-941.jpg", "images/redon-pd-28-1964.jpg", "images/rembrandt-p-2255-r.jpg"]
 let current = 0    
